@@ -1,0 +1,85 @@
+.fullPage{
+    height: 100vh;
+    width:100vw;
+    overflow-x: hidden;
+    display: flex;
+    font-family: "Avenir Next LT Pro";
+    src: url("../assets/AvenirLTProBlack.otf") format("otf");
+}
+.calendar-box{
+    width:50%;
+    height:100%;
+    border: 1px solid rgb(125, 103, 103);
+    align-content: center;
+}
+.calendar{
+    
+    border: 3px solid;
+    /* background: -webkit-linear-gradient(
+        to right,
+        #333399,
+        #ff00cc
+    ); */
+    width: 50%;
+    height: 50%;
+    align-content: center;
+    margin: auto; /* how??*/
+    display: flex;
+    /* margin-bottom: 10%; */
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding:2%;
+    background:rgba(159, 157, 157, 0.226);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2rem);
+    filter: drop-shadow (2px 16px);
+    border-image: linear-gradient(45deg, cyan, purple) 1;
+    border-radius: 8px; /* not getting set check*/
+}
+.left{
+    left:0;
+    background-color: #ffffff;
+    background-image: url('../assets/left.png');
+    background-repeat: no-repeat;
+}
+.right{
+    right:0;
+    background-color: #333333;
+    background-image: url('../assets/right.png');
+    background-repeat: no-repeat;
+    color: white;
+}
+.calendarHeader{
+    display:flex;
+    flex-direction: row;
+    font-size: x-large;
+    justify-content: space-between;
+}
+.calendarTitle {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:2%; /* check this as its making it grow towards right*/
+}
+.days_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #828282;
+}
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar-day{
+    padding:10px;
+}
+.calendar-day.current-day {
+  background-color: purple;
+  color: #ffffff;
+  border-radius: 100%; /* making it eclipse??*/
+}
+.c-left{
+    stroke: purple;
+}
